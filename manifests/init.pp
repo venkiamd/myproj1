@@ -43,6 +43,5 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class myproj1 {
-
-
+  class { 'myproj1::install': } -> class { 'myproj1::config': } ~> class { 'myproj1::service': }
 }
